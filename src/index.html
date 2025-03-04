@@ -16,17 +16,36 @@
                 <i class="fa-solid fa-bars text-4xl"></i>
             </button>
 
-            <h1 class="font-bold mx-auto bg-gradient-to-tr from-[#ff5d50] to-[#d31166] bg-clip-text text-transparent text-2xl sm:mx-0">&lt; Sara Acuña Benavides /&gt;</h1>
+            <h1 class="font-bold mx-auto bg-gradient-to-tr from-[#ff5d50] to-[#d31166] bg-clip-text text-transparent text-2xl sm:mx-0">&lt; Sara Acuña /&gt;</h1>
 
             <ul id="nav-menu" class="absolute top-0 hidden flex-col h-dvh w-dvw bg-indigo-950 justify-around text-center text-2xl font-bold sm:static sm:flex sm:h-auto sm:w-1/2 sm:justify-between sm:flex-row sm:bg-transparent sm:text-sm sm:text-left ">
                 <li><a href="#about-me">Sobre mí</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#reviews">Reseñas</a></li>
-                <li><button id="" class="cursor-pointer text-5xl sm:hidden"><i class="fa-solid fa-xmark"></i></button>
+                <li class="sm:hidden"><button id="" class="cursor-pointer text-5xl"><i class="fa-solid fa-xmark"></i></button>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <section id="hero" class="bg-black py-10">
+        <article class="max-w-72 mx-auto flex flex-wrap items-center justify-between sm:max-w-screen-lg sm:flex-row sm:gap-10">
+
+            <img class="max-w-72 mx-auto rounded-full sm:w-1/3" src="./assets/img/yo-foto.png" alt="Imagen de perfil">
+
+            <div class="mx-auto my-4 flex flex-col gap-5 sm:w-2/3">
+                <h2 class="font-bold bg-gradient-to-tr from-[#ff5d50] to-[#d31166] bg-clip-text text-transparent text-6xl text-center sm:mx-0 sm:text-left">Hola</h2>
+                <p>Soy Ingeniero de Sistemas con enfoque en desarrollo frontend, apasionado por la tecnología, la innovación y la creación de aplicaciones web eficientes y escalables.</p>
+
+                <ul class="flex gap-10">
+                    <li> <a href="https://www.linkedin.com/in/sara-acu%C3%B1a-benavides-b8170023a/" target="_blank"><img class="h-18 w-18" src="./assets/img/linkedin.png" alt="Logo de Linkedin"></a></li>
+    
+                    <li><a href="https://github.com/Acuna21" target="_blank"><img class="h-15 w-15" src="assets/img/github.png" alt="Logo de Github"></a></li>
+                </ul>
+            </div>
+
+        </article>
+    </section>
 
     <script src="./scripts/navigation.js"></script>
 </body>
