@@ -1,52 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="output.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
 
-<body class="text-indigo-50">
-    <header id="header" class="bg-indigo-950">
-        <nav class="h-16 flex items-center shadow-sm sticky top-0 justify-between sm:px-24">
+    <body class="text-indigo-50">
+        <header id="header" class="bg-indigo-950">
+            <nav
+            class="sticky top-0 flex h-16 items-center justify-between shadow-sm sm:px-24">
+                <button
+                    id="menu-btn"
+                    class="absolute left-2 cursor-pointer bg-transparent sm:hidden">
+                    <i class="fa-solid fa-bars text-4xl"></i>
+                </button>
 
-            <button id="menu-btn" class="absolute bg-transparent left-2 cursor-pointer sm:hidden">
-                <i class="fa-solid fa-bars text-4xl"></i>
-            </button>
+                <h1 class="mx-auto bg-gradient-to-tr from-[#ff5d50] to-[#d31166] bg-clip-text text-2xl font-bold text-transparent sm:mx-0"
+                >&lt; Sara Acuña /&gt;
+                </h1>
 
-            <h1 class="font-bold mx-auto bg-gradient-to-tr from-[#ff5d50] to-[#d31166] bg-clip-text text-transparent text-2xl sm:mx-0">&lt; Sara Acuña /&gt;</h1>
+                <ul
+                    id="nav-menu"
+                    class="absolute top-0 hidden h-dvh w-dvw flex-col justify-around bg-indigo-950 text-center text-2xl font-bold sm:static sm:flex sm:h-auto sm:w-1/2 sm:flex-row sm:justify-between sm:bg-transparent sm:text-left sm:text-sm"
+                >
+                    <li><a href="#about-me">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#reviews">Reseñas</a></li>
+                    <li class="sm:hidden">
+                        <button id="" class="cursor-pointer text-5xl">
+                        <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-            <ul id="nav-menu" class="absolute top-0 hidden flex-col h-dvh w-dvw bg-indigo-950 justify-around text-center text-2xl font-bold sm:static sm:flex sm:h-auto sm:w-1/2 sm:justify-between sm:flex-row sm:bg-transparent sm:text-sm sm:text-left ">
-                <li><a href="#about-me">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#reviews">Reseñas</a></li>
-                <li class="sm:hidden"><button id="" class="cursor-pointer text-5xl"><i class="fa-solid fa-xmark"></i></button>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <section id="hero" class="bg-black py-10">
+            <article
+                class="mx-auto flex max-w-72 flex-wrap items-center justify-between sm:max-w-screen-lg sm:flex-row sm:gap-10"
+            >
+                <img
+                class="mx-auto max-w-72 rounded-full sm:w-1/3"
+                src="./assets/img/yo-foto.png"
+                alt="Imagen de perfil"
+                />
 
-    <section id="hero" class="bg-black py-10">
-        <article class="max-w-72 mx-auto flex flex-wrap items-center justify-between sm:max-w-screen-lg sm:flex-row sm:gap-10">
-
-            <img class="max-w-72 mx-auto rounded-full sm:w-1/3" src="./assets/img/yo-foto.png" alt="Imagen de perfil">
-
-            <div class="mx-auto my-4 flex flex-col gap-5 sm:w-2/3">
-                <h2 class="font-bold bg-gradient-to-tr from-[#ff5d50] to-[#d31166] bg-clip-text text-transparent text-6xl text-center sm:mx-0 sm:text-left">Hola</h2>
-                <p>Soy Ingeniero de Sistemas con enfoque en desarrollo frontend, apasionado por la tecnología, la innovación y la creación de aplicaciones web eficientes y escalables.</p>
+                <div class="mx-auto my-4 flex flex-col gap-5 sm:w-2/3">
+                <h2
+                    class="bg-gradient-to-tr from-[#ff5d50] to-[#d31166] bg-clip-text text-center text-6xl font-bold text-transparent sm:mx-0 sm:text-left"
+                >
+                    Hola
+                </h2>
+                <p>
+                    Soy Ingeniero de Sistemas con enfoque en desarrollo frontend,
+                    apasionado por la tecnología, la innovación y la creación de
+                    aplicaciones web eficientes y escalables.
+                </p>
 
                 <ul class="flex gap-10">
-                    <li> <a href="https://www.linkedin.com/in/sara-acu%C3%B1a-benavides-b8170023a/" target="_blank"><img class="h-18 w-18" src="./assets/img/linkedin.png" alt="Logo de Linkedin"></a></li>
-    
-                    <li><a href="https://github.com/Acuna21" target="_blank"><img class="h-15 w-15" src="assets/img/github.png" alt="Logo de Github"></a></li>
+                    <li>
+                    <a
+                        href="https://www.linkedin.com/in/sara-acu%C3%B1a-benavides-b8170023a/"
+                        target="_blank"
+                        ><img
+                        class="h-18 w-18"
+                        src="./assets/img/linkedin.png"
+                        alt="Logo de Linkedin"
+                    /></a>
+                    </li>
+
+                    <li>
+                    <a href="https://github.com/Acuna21" target="_blank"
+                        ><img
+                        class="h-15 w-15"
+                        src="assets/img/github.png"
+                        alt="Logo de Github"
+                    /></a>
+                    </li>
                 </ul>
-            </div>
+                </div>
+            </article>
+        </section>
 
-        </article>
-    </section>
-
-    <script src="./scripts/navigation.js"></script>
-</body>
+        <script src="./scripts/navigation.js"></script>
+    </body>
 </html>
