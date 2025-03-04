@@ -30,6 +30,8 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --animate-slide-in: slide-in 0.5s ease-in-out;
+    --animate-slide-out: slide-out 0.5s ease-in-out;
   }
 }
 @layer base {
@@ -204,8 +206,17 @@
   .w-dvw {
     width: 100dvw;
   }
+  .animate-slide-in {
+    animation: var(--animate-slide-in);
+  }
+  .animate-slide-out {
+    animation: var(--animate-slide-out);
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -431,4 +442,20 @@
   syntax: "*";
   inherits: false;
   initial-value: 0 0 #0000;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-out {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
