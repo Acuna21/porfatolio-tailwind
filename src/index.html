@@ -151,15 +151,18 @@
             <div class="mx-auto max-w-72 sm:max-w-screen-sm lg:max-w-screen-lg">
                 <h3 class="text-4xl font-bold">Reseñas</h3>
                 
-                <ul>
-                    <li class="bg-indigo-50 mt-10 text-indigo-950 p-4 flex flex-col gap-4 rounded-md sm:flex-row">
-                        <img class="rounded-full size-28 object-cover mx-auto sm:mx-0" src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm90byUyMGRlJTIwcGVyZmlsfGVufDB8fDB8fHww" alt="">
-
-                        <div>
-                                <blockquote class="mb-4 italic">Trabajar con Sara es un placer. No solo domina el frontend, sino que también tiene una mentalidad analítica y estratégica que la hace sobresalir en cualquier proyecto tecnológico</blockquote>
-                                <p>Daniel Mercado</p>
-                        </div>
-                    </li>
+                <ul id="review-list">
+                    <template data-template="review-card">
+                        <li class="bg-indigo-50 mt-10 text-indigo-950 p-4 flex flex-col gap-4 rounded-md sm:flex-row">
+                            <img class="rounded-full size-28 object-cover mx-auto sm:mx-0" src="" alt="">
+    
+                            <div>
+                                    <blockquote class="mb-4 italic"></blockquote>
+                                    <p class="font-bold"></p>
+                            </div>
+                        </li>
+                    </template>
+                    
                 </ul>
 
             </div>
