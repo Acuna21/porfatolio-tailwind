@@ -3,9 +3,15 @@ const menuBtn = document.querySelector('#menu-btn');
 const navMenu = document.querySelector('#nav-menu');
 const navList = document.querySelectorAll('#nav-menu li');
 
+const mainTitle = document.querySelector('#main-title');
+
 menuBtn.addEventListener("click",()=>{
     navMenu.classList.remove('hidden', 'animate-slide-out');
     navMenu.classList.add('flex', 'animate-slide-in');
+});
+
+mainTitle.addEventListener("click",()=>{
+    window.scrollTo({top:0, behavior:"smooth"})
 });
 
 navList.forEach((liElement)=>{
